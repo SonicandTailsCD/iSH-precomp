@@ -31,7 +31,7 @@ jobs:
             --output_directory "../build" \
             --output_name "iSH-JIT.ipa" \
             --export_method ad-hoc \
-            --silent
+            --silent --xcargs 'CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO'
 
       - name: Archive IPA
         uses: actions/upload-artifact@v4
