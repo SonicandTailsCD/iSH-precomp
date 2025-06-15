@@ -31,7 +31,7 @@ jobs:
             --output_directory "../build" \
             --output_name "iSH-JIT.ipa" \
             --export_method ad-hoc \
-            --silent --xcargs 'CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO'
+            --silent --xcargs 'CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO IPHONEOS_DEPLOYMENT_TARGET=11.0'
 
       - name: Archive IPA
         uses: actions/upload-artifact@v4
