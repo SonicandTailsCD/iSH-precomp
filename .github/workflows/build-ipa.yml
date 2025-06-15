@@ -23,7 +23,7 @@ jobs:
         run: |
           gem install fastlane
       - name: Build IPA
-        working-directory: ish/iOS
+        working-directory: ish
         run: |
           fastlane gym \
             --scheme "iSH" \
