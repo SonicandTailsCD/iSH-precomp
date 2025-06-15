@@ -22,13 +22,6 @@ jobs:
       - name: Install Fastlane
         run: |
           gem install fastlane
-
-      - name: Install CocoaPods
-        run: |
-          brew install cocoapods
-          cd ish/iOS
-          pod install
-
       - name: Build IPA
         working-directory: ish/iOS
         run: |
